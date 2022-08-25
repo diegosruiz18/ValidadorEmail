@@ -12,24 +12,20 @@
         "destination": "/index.html"
       }
     ],
-    "headers": [ {
-      "source": "**/*",
-      "headers": [ {
-        "key": "X-Frame-Options",
-        "value": "SAMEORIGIN"
-      } ]
-    }, {
-      "source": "**/*.@(jpg|jpeg|gif|png)",
-      "headers": [ {
-        "key": "Cache-Control",
-        "value": "max-age=7200"
-      } ]
-    }, {
-      "source": "**/*",
-      "headers": [ {
-        "key": "X-Content-Type-Options",
-        "value": "nosniff"
-      } ]
-    } ]
+    "headers": [ 
+      {
+        "source": "**/*",
+        "headers": [ {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        } ]
+      }, {
+        "source": "**/*",
+        "headers": [ {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        } ]
+      } 
+    ]
   }
 }
